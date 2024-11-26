@@ -1,0 +1,25 @@
+/* Стили для Flexbox контейнера */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение пространства между элементами */
+    align-items: center; /* Центрирование элементов по вертикали */
+    padding: 10px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1; /* Все элементы растягиваются на одинаковую ширину */
+}
+
+/* Мобильная версия */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* При маленькой ширине экрана элементы располагаются в колонку */
+    }
+}

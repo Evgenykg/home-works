@@ -1,0 +1,23 @@
+/* Стили для сетки */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    grid-gap: 10px; /* Отступы между элементами */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.grid-item {
+    background-color: #5785f1;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Заголовок сетки */
+.grid-container h1 {
+    grid-column: span 3; /* Заголовок занимает все 3 колонки */
+    text-align: center;
+}
